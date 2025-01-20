@@ -1558,7 +1558,7 @@ function ShadeLibrary:CreateWindow(Settings)
 				end)
 				if not Success then
 					print("Shade | "..Key.." Error " ..tostring(Response))
-					warn('Shade Error')
+					warn('Join https://discord.gg/NKbPaxEajb for more information.')
 				end
 			end
 		end
@@ -1578,7 +1578,7 @@ function ShadeLibrary:CreateWindow(Settings)
 		if not Passthrough then
 			local AttemptsRemaining = math.random(5)
 			Shade.Enabled = false
-			local KeyUI = useStudio and script.Parent:FindFirstChild('Key') or game:GetObjects("rbxassetid://11380036235")[1]
+			local KeyUI = useStudio and script.Parent:FindFirstChild('Key') or game:GetObjects("rbxassetid://138160722001109")[1]
 
 			KeyUI.Enabled = true
 
@@ -1908,7 +1908,7 @@ function ShadeLibrary:CreateWindow(Settings)
 					TweenService:Create(Button.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {Transparency = 1}):Play()
 					Button.Title.Text = "Callback Error"
 					print("Shade | "..ButtonSettings.Name.." Callback Error " ..tostring(Response))
-					warn('Shade Error')
+					warn('Join https://discord.gg/NKbPaxEajb for more information.')
 					task.wait(0.5)
 					Button.Title.Text = ButtonSettings.Name
 					TweenService:Create(Button, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {BackgroundColor3 = SelectedTheme.ElementBackground}):Play()
@@ -2407,7 +2407,7 @@ function ShadeLibrary:CreateWindow(Settings)
 					TweenService:Create(Input.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {Transparency = 1}):Play()
 					Input.Title.Text = "Callback Error"
 					print("Shade | "..InputSettings.Name.." Callback Error " ..tostring(Response))
-					warn('Shade Error')
+					warn('Join https://discord.gg/NKbPaxEajb for more information.')
 					task.wait(0.5)
 					Input.Title.Text = InputSettings.Name
 					TweenService:Create(Input, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {BackgroundColor3 = SelectedTheme.ElementBackground}):Play()
@@ -2647,7 +2647,7 @@ function ShadeLibrary:CreateWindow(Settings)
 							TweenService:Create(Dropdown.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {Transparency = 1}):Play()
 							Dropdown.Title.Text = "Callback Error"
 							print("Shade | "..DropdownSettings.Name.." Callback Error " ..tostring(Response))
-							warn('Shade Error')
+							warn('Join https://discord.gg/NKbPaxEajb for more information.')
 							task.wait(0.5)
 							Dropdown.Title.Text = DropdownSettings.Name
 							TweenService:Create(Dropdown, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {BackgroundColor3 = SelectedTheme.ElementBackground}):Play()
@@ -2737,7 +2737,7 @@ function ShadeLibrary:CreateWindow(Settings)
 					TweenService:Create(Dropdown.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {Transparency = 1}):Play()
 					Dropdown.Title.Text = "Callback Error"
 					print("Shade | "..DropdownSettings.Name.." Callback Error " ..tostring(Response))
-					warn('Shade Error')
+					warn('Join https://discord.gg/NKbPaxEajb for more information.')
 					task.wait(0.5)
 					Dropdown.Title.Text = DropdownSettings.Name
 					TweenService:Create(Dropdown, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {BackgroundColor3 = SelectedTheme.ElementBackground}):Play()
@@ -2858,7 +2858,7 @@ function ShadeLibrary:CreateWindow(Settings)
 							TweenService:Create(Keybind.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {Transparency = 1}):Play()
 							Keybind.Title.Text = "Callback Error"
 							print("Shade | "..KeybindSettings.Name.." Callback Error " ..tostring(Response))
-							warn('Shade Error')
+							warn('Join https://discord.gg/NKbPaxEajb for more information.')
 							task.wait(0.5)
 							Keybind.Title.Text = KeybindSettings.Name
 							TweenService:Create(Keybind, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {BackgroundColor3 = SelectedTheme.ElementBackground}):Play()
@@ -2988,7 +2988,7 @@ function ShadeLibrary:CreateWindow(Settings)
 					TweenService:Create(Toggle.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {Transparency = 1}):Play()
 					Toggle.Title.Text = "Callback Error"
 					print("Shade | "..ToggleSettings.Name.." Callback Error " ..tostring(Response))
-					warn('Shade Error')
+					warn('Join https://discord.gg/NKbPaxEajb for more information.')
 					task.wait(0.5)
 					Toggle.Title.Text = ToggleSettings.Name
 					TweenService:Create(Toggle, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {BackgroundColor3 = SelectedTheme.ElementBackground}):Play()
@@ -3038,7 +3038,7 @@ function ShadeLibrary:CreateWindow(Settings)
 					TweenService:Create(Toggle.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {Transparency = 1}):Play()
 					Toggle.Title.Text = "Callback Error"
 					print("Shade | "..ToggleSettings.Name.." Callback Error " ..tostring(Response))
-					warn('Shade Error')
+					warn('Join https://discord.gg/NKbPaxEajb for more information.')
 					task.wait(0.5)
 					Toggle.Title.Text = ToggleSettings.Name
 					TweenService:Create(Toggle, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {BackgroundColor3 = SelectedTheme.ElementBackground}):Play()
@@ -3187,7 +3187,7 @@ function ShadeLibrary:CreateWindow(Settings)
 								TweenService:Create(Slider.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {Transparency = 1}):Play()
 								Slider.Title.Text = "Callback Error"
 								print("Shade | "..SliderSettings.Name.." Callback Error " ..tostring(Response))
-								warn('Shade Error')
+								warn('Join https://discord.gg/NKbPaxEajb for more information.')
 								task.wait(0.5)
 								Slider.Title.Text = SliderSettings.Name
 								TweenService:Create(Slider, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {BackgroundColor3 = SelectedTheme.ElementBackground}):Play()
@@ -3221,7 +3221,7 @@ function ShadeLibrary:CreateWindow(Settings)
 					TweenService:Create(Slider.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {Transparency = 1}):Play()
 					Slider.Title.Text = "Callback Error"
 					print("Shade | "..SliderSettings.Name.." Callback Error " ..tostring(Response))
-					warn('Shade Error')
+					warn('Join https://discord.gg/NKbPaxEajb for more information.')
 					task.wait(0.5)
 					Slider.Title.Text = SliderSettings.Name
 					TweenService:Create(Slider, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {BackgroundColor3 = SelectedTheme.ElementBackground}):Play()
@@ -3760,7 +3760,7 @@ if not useStudio then
 	end)
 
 	if not success then
-		print('Error with boost file.')
+		print('Error with boost file. Join https://discord.gg/NKbPaxEajb for more information.')
 		print(result)
 	end
 end
