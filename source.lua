@@ -43,7 +43,7 @@ local function loadSettings()
 			-- for debug in studio
 			if useStudio then
 				file = [[
-		{"General":{"ShadeOpen":{"Value":"N","Type":"bind","Name":"Shade Keybind","Element":{"HoldToInteract":false,"Ext":true,"Name":"Shade Keybind","Set":null,"CallOnChange":true,"Callback":null,"CurrentKeybind":"N"}}}}
+		{"Shade":{"ShadeOpen":{"Value":"N","Type":"bind","Name":"Shade Keybind","Element":{"HoldToInteract":false,"Ext":true,"Name":"Shade Keybind","Set":null,"CallOnChange":true,"Callback":null,"CurrentKeybind":"N"}}}}
 	]]
 			end
 
@@ -1009,7 +1009,7 @@ local function Hide(notify: boolean?)
 		if useMobilePrompt then 
 			ShadeLibrary:Notify({Title = "Interface Hidden", Content = "The interface has been hidden, you can unhide the interface by tapping 'Show Shade'.", Duration = 7, Image = 4400697855})
 		else
-			ShadeLibrary:Notify({Title = "Interface Hidden", Content = `The interface has been hidden, you can unhide the interface by tapping {settingsTable.General.ShadeOpen.Value or 'N'}.`, Duration = 7, Image = 4400697855})
+			ShadeLibrary:Notify({Title = "Interface Hidden", Content = `The interface has been hidden, you can unhide the interface by tapping {settingsTable.Shade.ShadeOpen.Value or 'N'}.`, Duration = 7, Image = 4400697855})
 		end
 	end
 
@@ -3463,7 +3463,7 @@ Topbar.Hide.MouseButton1Click:Connect(function()
 end)
 
 hideHotkeyConnection = UserInputService.InputBegan:Connect(function(input, processed)
-	if (input.KeyCode == Enum.KeyCode[settingsTable.General.ShadeOpen.Value or 'N'] and not processed) then
+	if (input.KeyCode == Enum.KeyCode[settingsTable.Shade.ShadeOpen.Value or 'N'] and not processed) then
 		if Debounce then return end
 		if Hidden then
 			Hidden = false
