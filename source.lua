@@ -11,6 +11,7 @@ local settingsTable = {
 	General = {
 		-- if needs be in order just make getSetting(name)
 		ShadeOpen = {Type = 'bind', Value = 'N', Name = 'Shade Keybind'},
+		ShadeDestroy = {Type = 'bind', Value = 'N', Name = 'Destory Interface ⚠️'},
 		-- buildwarnings
 		-- Shadeprompts
 
@@ -1362,6 +1363,13 @@ local function createSettings(window)
 					Callback = function(Value)
 						setting.Value = Value
 						updateSettings()
+					end,
+				})
+			elseif setting.Type == 'button' then
+				setting.Element = newTab:CreateButton({
+					Name = setting.Name,
+					Callback = function()
+						Shade:Destroy()
 					end,
 				})
 			end
