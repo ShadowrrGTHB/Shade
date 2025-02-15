@@ -8,10 +8,10 @@ local ShadeFolder = "Shade"
 local ConfigurationFolder = ShadeFolder.."/Configurations"
 local ConfigurationExtension = ".rfld"
 local settingsTable = {
-	General = {
+	Shade = {
 		-- if needs be in order just make getSetting(name)
-		ShadeOpen = {Type = 'bind', Value = 'N', Name = 'Shade Keybind'},
 		ShadeDestroy = {Type = 'button', Name = 'Destroy Interface ⚠️'},
+		ShadeOpen = {Type = 'bind', Value = 'N', Name = 'Shade Keybind'},
 		-- buildwarnings
 		-- Shadeprompts
 
