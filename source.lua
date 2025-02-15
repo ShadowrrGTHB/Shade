@@ -11,7 +11,7 @@ local settingsTable = {
 	General = {
 		-- if needs be in order just make getSetting(name)
 		ShadeOpen = {Type = 'bind', Value = 'N', Name = 'Shade Keybind'},
-		ShadeDestroy = {Type = 'button', Name = 'Destory Interface ⚠️'},
+		ShadeDestroy = {Type = 'button', Name = 'Destroy Interface ⚠️'},
 		-- buildwarnings
 		-- Shadeprompts
 
