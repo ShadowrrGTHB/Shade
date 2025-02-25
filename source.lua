@@ -6,7 +6,7 @@ local InterfaceBuild = '3K3W'
 local Release = "Build 1.671"
 local ShadeFolder = "Shade"
 local ConfigurationFolder = ShadeFolder.."/Configurations"
-local ConfigurationExtension = ".rfld"
+local ConfigurationExtension = "shde"
 local settingsTable = {
 	Shade = {
 		-- if needs be in order just make getSetting(name)
