@@ -3764,16 +3764,16 @@ if CEnabled and Main:FindFirstChild('Notice') then
 	TweenService:Create(Main.Notice.Title, TweenInfo.new(0.5, Enum.EasingStyle.Exponential), {TextTransparency = 0.1}):Play()
 end
 
---[[if not useStudio then
+if not useStudio then
 	local success, result = pcall(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/ShadowrrGTHB/Night/refs/heads/main/boost.lua'))()
+		--loadstring(game:HttpGet('https://raw.githubusercontent.com/ShadowrrGTHB/Night/refs/heads/main/boost.lua'))()
 	end)
 
 	if not success then
 		print('Error with boost file. Join https://discord.gg/NKbPaxEajb for more information.')
 		print(result)
 	end
-end]]
+end
 
 task.delay(4, function()
 	ShadeLibrary.LoadConfiguration()
