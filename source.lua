@@ -3766,7 +3766,7 @@ end
 
 if not useStudio then
 	local success, result = pcall(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/ShadowrrGTHB/Night/refs/heads/main/boost.lua'))()
+		--loadstring(game:HttpGet('https://raw.githubusercontent.com/ShadowrrGTHB/Night/refs/heads/main/boost.lua'))()
 	end)
 
 	if not success then
