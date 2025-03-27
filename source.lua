@@ -40,7 +40,7 @@ local function loadSettings()
 				end
 			end
 
-			 for debug in studio
+			-- for debug in studio
 			if useStudio then
 				file = [[
 		{"Shade":{"ShadeOpen":{"Value":"N","Type":"bind","Name":"Shade Keybind","Element":{"HoldToInteract":false,"Ext":true,"Name":"Shade Keybind","Set":null,"CallOnChange":true,"Callback":null,"CurrentKeybind":"N"}}}}
@@ -459,7 +459,7 @@ local ShadeLibrary = {
 			ElementStroke = Color3.fromRGB(190, 200, 210),
 			SecondaryElementStroke = Color3.fromRGB(180, 190, 200),
 
-			SliderBackground = Color3.fromRGB(200, 220, 235),   Lighter shade
+			SliderBackground = Color3.fromRGB(200, 220, 235),  -- Lighter shade
 			SliderProgress = Color3.fromRGB(70, 130, 180),
 			SliderStroke = Color3.fromRGB(150, 180, 220),
 
@@ -482,13 +482,13 @@ local ShadeLibrary = {
 }
 
 
- Services
+-- Services
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local Players = game:GetService("Players")
 local CoreGui = game:GetService("CoreGui")
 
- Interface Management
+-- Interface Management
 
 local Shade = useStudio and script.Parent:FindFirstChild('Shade') or game:GetObjects("rbxassetid://111017136906881")[1]
 local buildAttempts = 0
